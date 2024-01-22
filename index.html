@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata and Link to CSS Stylesheet -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repository Page</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="main_div">
+      <!-- Navigation Bar -->
+      <div class="nav-bar">
+        <!-- Search Form -->
+        <form id="myform">
+          <!-- Input Field for GitHub Username -->
+          <input type="text" id="search" placeholder="Enter GitHub Username" />
+          <!-- Wrapper for Button and Dropdown, which are in the same row on small screens -->
+          <div class="btn-dropdown-wrapper">
+            <!-- Search Button -->
+            <button type="submit">Search</button>
+            <!-- Dropdown for Selecting Number of Repositories Per Page -->
+            <select id="reposPerPage">
+              <option value="10">10 per page</option>
+              <option value="20">20 per page</option>
+              <option value="50">50 per page</option>
+              <option value="100">100 per page</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <!-- Home Content Section -->
+      <div id="home-content" style="display: block">
+        <!-- Introduction and Description -->
+        <div class="home">
+          <!-- Heading and Description for the Application -->
+          <div class="home-heading">
+            <h1>Explore the World of GitHub Users</h1>
+            <p>
+              A simple yet powerful tool to discover GitHub profiles and
+              repositories.
+            </p>
+          </div>
+
+          <!-- Subheading and Additional Information -->
+          <div class="home-subheading">
+            <h1>Search, Learn, Connect</h1>
+            <p>
+              Your gateway to exploring developers and their work on GitHub.
+            </p>
+          </div>
+        </div>
+
+        <!-- Guide Section: Use and Workflow of the App -->
+        <div class="home-guide">
+          <!-- Reasons to Use the App -->
+          <div class="show-use">
+            <h1>Why Use This App?</h1>
+            <ul>
+              <li>
+                <p>
+                  Discover Developers: Find GitHub users from around the world.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Insightful Profiles: Access detailed information including
+                  names, locations, bios, and more.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explore Repositories: Dive into a vast range of projects and
+                  repositories.
+                </p>
+              </li>
+              <li>
+                <p>
+                  User-Friendly Interface: A seamless experience tailored for
+                  both beginners and experienced users.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- How the App Works -->
+          <div class="show-work">
+            <h1>How It Works</h1>
+            <ul>
+              <li>
+                <p>
+                  Type a Username: Simply enter a GitHub username in the search
+                  bar.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Instant Results: View comprehensive profiles including
+                  personal details and repository summaries.
+                </p>
+              </li>
+              <li>
+                <p>Deep Dive: Click on any repository to explore it further.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Data Section -->
+      <div class="user_data">
+        <!-- Error Message (Hidden Initially) -->
+        <p id="error-msg" style="display: none">
+          User Not Found! Please Enter a Valid Username
+        </p>
+        <!-- User Profile Image Container -->
+        <div class="user_img" id="user-profile"></div>
+
+        <!-- User Information Text -->
+        <div class="user_text">
+          <!-- User Name, Bio, Location, and Social Media Links -->
+          <div id="user-name"></div>
+          <div id="user-bio"></div>
+          <div id="user-location"></div>
+          <div class="user_media">
+            <div id="user-github"></div>
+            <div id="user-twitter"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repository Search Bar (Hidden Initially) -->
+      <div id="repoSearchBar" style="display: none">
+        <input
+          type="text"
+          id="repoSearchInput"
+          placeholder="Search repositories..."
+        />
+        <button type="submit">Search</button>
+      </div>
+
+      <!-- Repository Grid Container -->
+      <div>
+        <div class="repos" id="repoGrid"></div>
+      </div>
+
+      <!-- Pagination Container (for navigating through repository pages) -->
+      <div class="pagination-container"></div>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
