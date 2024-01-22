@@ -18,8 +18,8 @@
 <li>No 'Newer' and 'Older' buttons for pagination to enhance UI aesthetics.</li>
 <li>Limit of 60 API calls per hour.</li>
 <li>Includes a front page for showcasing the project, not mentioned in the original assignment.</li>
-<li><li>Currently uses client-side pagination due to time constraints, with plans to implement server-side pagination in the near future.</li>
-</li>
+<li>Currently uses client-side pagination due to time constraints, with plans to implement server-side pagination in the near future.</li>
+
 </ul>
 
 <h2>Running the Project</h2>
@@ -36,5 +36,9 @@
 <footer>
 <p>Created by Owais Raza</p>
 <a href='https://github-user-search-web-app.vercel.app/' >Live : https://github-user-search-web-app.vercel.app/</a>
+
+<img src="./assets/images/homePage.png" style="width: 600px; height: 400px; margin:5px">
+<img src="./assets/images/mainPage.png" style="width: 600px; height: 400px; margin:5px">
+
 </footer>
 
